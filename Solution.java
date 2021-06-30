@@ -1,18 +1,20 @@
 import java.util.*;
-public class Solution
- {
-    public static void main(String[] args)
+class Solution
+{
+    public static void main(String args[])
     {
+        int n,r,s=0,p=1;
         Scanner sc=new Scanner(System.in);
-        int i,m,n;
-        n=sc.nextInt();
-        for(i=1;i<=10;i++)
+        System.out.println("Enter n value: ");
+        n=sc.nextInt( );
+        while(n!=0)
         {
-            m=n*i;
-          System.out.println(n + " x "+i+" = "+m);
+            r=n%10;
+            s=s+r;
+            p=p+r;
+            n=n/10;
         }
-        
-        
+        System.out.println(+s);
+        System.out.println(+p);
     }
-    
 }
