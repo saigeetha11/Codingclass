@@ -3,7 +3,7 @@ class Secondlargeele
 {
 public static void main(String args[ ])
 {
-int n,temp,max;
+int n,temp;
 Scanner sc=new Scanner(System.in);
 System.out.print("Enter the number of elements in Array: ");
 n=sc.nextInt( );
