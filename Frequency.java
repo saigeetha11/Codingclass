@@ -34,5 +34,5 @@ Enter the array elements:
 2 5 1 6 7 8 1 1 
 Enter the number:
 1
-Frequency of the number is: 2
+Frequency of the number is: 3
     
