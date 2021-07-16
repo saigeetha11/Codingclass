@@ -109,7 +109,7 @@ Enter the element to be inserted at positon:
 [36, 42, 25]
 Enter your choice:
 7
-[36, 42, 25]
+36, 42, 25
 
 
      
