@@ -38,6 +38,6 @@ Enter the value to be Searched:
 Enter the number to be Replaced:
 66
 11 66 33 44 55
-30
+
      
      
