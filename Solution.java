@@ -1,21 +1,22 @@
-import java.util.*;
-class Solution
-{
-    public static void main(String args[])
+class Solution {
+    public int firstMissingPositive(int[] nums) 
     {
-        int n,r,s=0,p=1,d;
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Enter n value: ");
-        n=sc.nextInt( );
-        while(n!=0)
+        HashSet<Integer> h=new HashSet<Integer>();
+        for(int i:nums)
         {
-            r=n%10;
-            s=s+r;
-            p=p*r;
-            n=n/10;
+              h.add(i);
+            
         }
-        d=p-s;
+        int n=nums.length;
+        for(int i=0;i<nums.length;i++)
+        {
+            if(h.contains(i)==false)
+            {
+                return i;
+            }
+           
+        }
+         return n;
         
-        System.out.println(+d);
     }
 }
