@@ -36,4 +36,4 @@ Enter the Size of the Array:
 5
 Enter the Elements in the Array:
 1 3 4 5 8
-1 3 5
+4 8
