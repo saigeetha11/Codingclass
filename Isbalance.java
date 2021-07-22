@@ -54,6 +54,6 @@ Enter the String:
 ( ){ }[ ]
 Balanced
 Enter the String:
-([{}])
+( { [ } ] )
 Not Balanced
     
