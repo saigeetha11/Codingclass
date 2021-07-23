@@ -26,22 +26,18 @@ class Hashmapit
                    }
                  System.out.println(hm);
                  Iterator itr=hm.keySet( ).iterator( );
-                 System.out.println("Display Keys using iterator: ");
+                 Iterator itr1=hm.values( ).iterator( );
+                 System.out.println("Display elements using iterator: ");
                  while(itr.hasNext( ))
                 {
                      Integer i=(Integer)itr.next( );
-                    System.out.println(i);    
-                }    
-                 Iterator itr1=hm.values( ).iterator( );
-                 System.out.println("Display Values using iterator: ");
-                 while(itr1.hasNext( ))
-                {
                      Integer j=(Integer)itr1.next( );
-                    System.out.println(j);    
+                    System.out.println(i+"="+j);    
                 }    
+                 
            }
 }
-----------------------------------------------------------------------------------------------------------
+/*----------------------------------------------------------------------------------------------------------
 OUTPUT:
 Enter the Size:
 5
@@ -50,15 +46,9 @@ Enter the Key elements:
 Enter the Value elements:
 11 12 13 14 15
 {10=11, 20=12, 30=13, 40=14, 50=15}
-Display Keys using iterator:
-10
-20
-30
-40
-50
-Display Values using iterator:
-11
-12
-13
-14
-15
+Display Elements using iterator:
+10=11
+20=12
+30=13
+40=14
+50=15*/
