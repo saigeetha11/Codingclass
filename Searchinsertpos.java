@@ -10,7 +10,7 @@ class Searchinsertpos
                  System.out.println("Enter the Elements: ");
                 for(int i=0;i<n;i++)
                 arr[i]=sc.nextInt( );
-                int s=arr.length;
+                int m=arr.length;
                 System.out.println("Enter the element to be inserted: ");
                 int k=sc.nextInt( );
                 System.out.println("Position of inserted element: ");
@@ -24,7 +24,9 @@ class Searchinsertpos
                        System.out.println(pos);
                        break;
                    }  
-               }  
+               } 
+             if(found==0)
+             System.out.println(m); 
           }
 }
 --------------------------------------------------------------------------------------------------------------------
