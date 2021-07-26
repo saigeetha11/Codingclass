@@ -1,0 +1,19 @@
+//Factorial leetcode
+class Solution 
+{
+    public int trailingZeroes(int n)
+    {
+        int fact=1;
+        while(n>=0)
+        {
+            fact=fact*n;
+            n--;
+        }
+        return fact;
+    }
+}
+-------------------------------------------------------------------------
+Output:
+Yout input 3
+Your output 0
+Expected 0
