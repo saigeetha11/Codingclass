@@ -1,0 +1,54 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+public class Main 
+{
+    
+            static int N=200000;
+            public static int prime[ ]=new int[N];
+            public static int arr[ ]=new int[N];
+            public static void sieve( )
+            {
+                for(int i=0;i<N;i++)
+                {
+                   prime[i]=1;
+                }
+                 prime[0]=0;
+                 prime[1]=0;
+                 for(int i=2;i*i<N;i++)
+                {
+                      if(prime[i]==1)
+                      {
+                         for(int j=i*i;j<N;j+=i)
+                         {
+                             prime[j]=0;
+                         }
+                      }
+                }
+           }
+         public static void main(String args[ ]) throws java.lang.Exception
+         {
+             sieve( );
+             int x,b=0;
+             Scanner sc = new Scanner(System.in);
+             x=sc.nextInt();
+             for(int i=0;i<=x;i++)
+             {
+                 if((prime[i]==1) && (prime[x-i]==1))
+                {
+                 b=i+(x-i);
+                }
+                
+             }
+               System.out.println("sum="+b);
+               if(b==x)
+                System.out.println("Deepa");
+                else
+                System.out.println("Arjit");
+         }
+}
+-------------------------------------------------------------------------------------------------------------------------
+Output:
+10
+Sum=10;
+Deepa
