@@ -108,4 +108,4 @@ Enter the n value:
 Enter the array elements:
 11 12 15 82 61
 Largest prime is:
-11
+61
